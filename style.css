@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaina+2:wght@700&family=Courgette&family=Merienda:wght@700&family=Pattaya&family=Poppins:wght@500&family=Roboto&family=Russo+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, orange, white, green);
+}
+
+#flag {
+  width: 30vw;
+  height: 20vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#orange {
+  width: 100%;
+  height: 33%;
+  background-color: rgb(255, 153, 0);
+}
+
+#white {
+  width: 100%;
+  height: 34%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+#white img {
+  height: 100%;
+  animation: rotate linear 4s infinite;
+}
+
+#green {
+  width: 100%;
+  height: 33%;
+  background-color: rgb(18, 215, 0);
+}
+
+.text {
+  width: 100%;
+  height: 10%;
+
+}
+
+.text h1 {
+  width: 100%;
+  top: 20px;
+  font-size: 5vw;
+  text-align: center;
+  position: absolute;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: transparent;
+  background: linear-gradient(to right bottom, rgb(255, 128, 0), rgb(254, 255, 167), rgb(53, 187, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.1px #000;
+  font-family: 'Courgette', cursive;
+
+}
+
+.text h2 {
+  font-size: 4.5vw;
+  font-weight: 800;
+  margin-top: 20px;
+  display: flex;
+  color: transparent;
+  background: linear-gradient(to right bottom, rgb(255, 128, 0), rgb(254, 255, 167), rgb(53, 187, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  flex-direction: column;
+  text-align: center;
+  font-family: Pattaya;
+  -webkit-text-stroke: .2px black;
+
+}
+
+.text span {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.text span:nth-child(3){
+  display: block;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+@media (max-width:600px) {
+  #main{
+    justify-content: space-around;
+  }
+  #flag {
+    width: 45vw;
+    height: 30vw;
+  }
+  .text{
+    height: 10vw;
+  }
+  .text span {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
